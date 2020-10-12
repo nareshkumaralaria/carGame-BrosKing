@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing | BrosKing</title>
+    <!--Including CSS file-->
+    <link rel="stylesheet" href="style.css">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/car1.png" type="image/png">
+</head>
+
+<body>
+    <audio src="sound/backgroundSound.mp3" loop id="music"></audio>
+    <div class="carGame">
+        <div class="score"> </div>
+        <div class="startScreen">
+            <div class="wrapper">
+                <div class="instruction">
+                    <p>Use Arrow keys for move Left, Right, Up and Down<br>
+                        If you hit another car you lose the game</p>
+                </div>
+                <div class="div welcome_text">
+                    <form class="welcome_form" name="welcome_form" onsubmit="submitform(event)">
+                        <!-- 
+                            <input type="text" name="Username" placeholder="Player Name">
+                        -->
+                        <button type="submit" class="submit">Start Game</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="gameArea hide">
+
+        </div>
+    </div>
+<!--Including javaScript file-->
+    <script src="javaS.js"></script>
+</body>
+
+</html>
